@@ -1,0 +1,31 @@
+{
+  "name": "server.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evokelabs/MERN-EcommerceStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evokelabs/MERN-EcommerceStore/issues"
+  },
+  "homepage": "https://github.com/evokelabs/MERN-EcommerceStore#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
+  }
+}
