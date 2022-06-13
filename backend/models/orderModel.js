@@ -7,7 +7,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       ref: 'User'
     },
-    orderitems: [
+    orderItems: [
       {
         name: { type: String, required: true },
         qty: { type: Number, required: true },
@@ -69,7 +69,7 @@ const orderSchema = mongoose.Schema(
     }
   },
   {
-    timestamp: true
+    timestamps: true
   }
 )
 
